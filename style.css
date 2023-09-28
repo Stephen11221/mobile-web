@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background: green;
+    display: block;
+}
+
+/*Mobile screen width */
+
+@media screen and (max-width: 758px) {
+    header {
+        position: block;
+        width: 100%;
+        height: 20px;
+        background: rgba(223, 223, 11, 0.5);
+        border: 1px solid gray;
+    }
+
+    header h3 {
+        color: blueviolet;
+        animation: sym alternate 2000ms infinite;
+    }
+
+    @keyframes sym {
+        from {
+            color: blueviolet;
+        }
+
+        to {
+            color: red;
+        }
+    }
+
+    .box-grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        height: 500px;
+        margin-top: 10px;
+        position: block;
+        background: rgba(11, 76, 54, 0.7);
+    }
+
+    .box-grid>div {
+        background: wheat;
+        border: 1px solid gray;
+    }
+
+    .left-side .circle {
+        margin-top: 70px;
+        position: absolute;
+        margin-left: 60px;
+        height: 80px;
+        background: gray;
+        width: 80px;
+        border-radius: 80px;
+        border: 1px green;
+    }
+
+    .block-text {
+        text-align: center;
+        padding: 10px 5px;
+        margin-top: 160px;
+    }
+
+    .block-text input {
+        margin-top: 22px;
+    }
+
+    .main .text-box {
+        padding: 12px 7px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .main svg circle {
+        fill: none;
+        stroke: #7380ec;
+        stroke-width: 14;
+        stroke-linecap: round;
+        transform: translate(10px, 5px);
+        stroke-dasharray: 120;
+        stroke-dashoffset: 200;
+
+
+    }
+
+
+    .main .percent {
+        color: blue;
+        margin-top: -60px;
+        margin-left: 96px;
+    }
+
+    .news-port {
+        width: 100%;
+        display: block;
+        background: greenyellow;
+    }
+
+    .news-port>div {
+        translate: all 200s ease-in;
+        height: 20px;
+        padding: 6px 4px;
+        border: 1px solid gray;
+        color: wheat;
+        text-align: center;
+        background: blue;
+    }
+
+    .news-port>div:hover {
+        cursor: pointer;
+        border: 5px #7380ec solid;
+    }
+
+    .news-port .techno {
+        background: green;
+    }
+
+    .news-port .public {
+        background: yellowgreen;
+    }
+
+    .news-port .bussiness {
+        background: goldenrod;
+    }
+}
+
+
+
+/**Down load css 
+
+/* don't use this codes
+/* .main svg circle {
+        
+        stroke-dashoffset: 120;
+        stroke-dasharray: 70;
+        stroke-width: 15;
+        background: none;
+        stroke-linecap: round;
+        margin-left: 100px;
+        stroke: blue;
+    }*/
